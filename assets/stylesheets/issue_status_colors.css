@@ -1,0 +1,26 @@
+
+.status-legend-item, .status-legend  {
+    display: inline-block;
+}
+.status-legend-item {
+    margin-left: 15px;
+}
+.status-legend-item .status-color-preview {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #333333;
+    position: relative;
+    top: 5px;
+}
+
+input.color-picker.miniColors {
+    width: 70px !important;
+}
+.clear-color-picker {
+    margin-left: 5px;
+}
+
+.admin-issues-status-colors {
+    margin-top: 15px;
+}

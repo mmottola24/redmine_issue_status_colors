@@ -1,0 +1,21 @@
+<%= fields_for :issue_status do |f| -%>
+    <div class="admin-issues-status-colors">
+        <p>Leave fields below empty to use defaults</p>
+        <p style="display: block; position: relative;">
+          <%= f.label :highlight_color, 'Highlight Color' %>
+          <%= f.text_field :highlight_color, class: 'color-picker' %>
+          <a href="#" class="clear-color-picker">clear</a>
+        </p>
+        <p>
+          <%= f.label :legend_text, 'Legend Text' %>
+          <%= f.text_field :legend_text %>
+        </p>
+    </div>
+<% end %>
+
+<% content_for :header_tags do %>
+    <%= javascript_include_tag 'jquery.miniColors.min.js', :plugin => 'redmine_issue_status_colors'  %>
+    <%= stylesheet_link_tag 'jquery.miniColors.css', :plugin => 'redmine_issue_status_colors'  %>
+    <%= javascript_include_tag :issue_status_colors, :plugin => 'redmine_issue_status_colors'  %>
+    <%= stylesheet_link_tag :issue_status_colors, :plugin => 'redmine_issue_status_colors'  %>
+<% end %>

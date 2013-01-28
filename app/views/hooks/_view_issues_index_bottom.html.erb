@@ -1,0 +1,31 @@
+<%
+stylesheet = ''
+css_prefix = 'table.list tr.'
+%>
+
+<div class="status-legend-wrapper" >
+    <strong>Statuses: </strong>
+    <%
+    statuses = isc_get_statuses_from_issues issues
+    statuses.each do |status| %>
+        <div class="status-legend-item">
+            <% unless status[1][:highlight_color].blank? %>
+                <div class="status-color-preview" style="background-color: <%= status[1][:highlight_color] %>;"></div>
+                <%
+                stylesheet = stylesheet + css_prefix + "status-#{status[1][:id]} { background-color: " + status[1][:highlight_color] + "; } \n"
+                %>
+            <% end %>
+            <div class="status-legend">
+                <%= (!status[1][:legend_text].blank?) ? status[1][:legend_text] : status[1][:name] %>
+                <%= "(#{status[1][:num_issues]})" %>
+            </div>
+        </div>
+    <% end %>
+</div>
+
+<% content_for :header_tags do %>
+    <%= stylesheet_link_tag :issue_status_colors, :plugin => 'redmine_issue_status_colors'  %>
+    <style>
+      <%= stylesheet %>
+    </style>
+<% end %>
