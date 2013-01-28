@@ -15,8 +15,8 @@ The colours and legend text can be modified in Administration > Issue Statuses e
 
 ### Screenshots
 
-Issues List:
+Issues List   
 https://github.com/controlz/Remine-Issue-Status-Colors/blob/master/assets/images/screenshots/issues_list.png
 
-Administration > Issue Statuses
+Administration > Issue Statuses   
 https://github.com/controlz/Remine-Issue-Status-Colors/blob/master/assets/images/screenshots/admin_issues_statuses.png
