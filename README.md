@@ -7,16 +7,16 @@ The colours and legend text can be modified in Administration > Issue Statuses e
 
 ### Installation
 
-1. Download the plugin, place files in plugins directory.  Or use `git clone http://github.com/controlz/redmine_issue_status_colors`
+1. Download the plugin, place files in plugins directory.  Or use `git@github.com:controlz/Remine-Issue-Status-Colors.git`
 
-2. Run `rake redmine:plugins:migrate`
+2. Run `rake redmine:plugins:migrate` or `rake redmine:plugins:migrate RAILS_ENV=production`
 
 3. Visit Administration > Issues Statuses, edit the statuses where you want to see your issues colour coded.
 
 ### Screenshots
 
 Issues List:
-https://github.com/controlz/Remine-Issue-Status-Colors/assets/images/screenshots/issues_list.png
+https://github.com/controlz/Remine-Issue-Status-Colors/blob/master/assets/images/screenshots/issues_list.png
 
 Administration > Issue Statuses
-https://github.com/controlz/Remine-Issue-Status-Colors/assets/images/screenshots/admin_issues_statuses.png
+https://github.com/controlz/Remine-Issue-Status-Colors/blob/master/assets/images/screenshots/admin_issues_statuses.png
