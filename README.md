@@ -1,9 +1,9 @@
 # Issue Status Colors
 
-Redmine an open-source project management tool that I've come to enjoy using. There are many great plugins available for Redmine that like using.
+Redmine an open-source project management tool that I've come to enjoy using. I have found many great plugins available for Redmine that I like to use.
 
 This is a Redmine plugin that adds the ability to view issue lists with colour coded issues based on it's status.
-The colours and legend text can be modified in Administration > Issue Statuses each type of issue status your setup has.
+The colours and legend text can be modified in Administration > Issue Statuses for each type of issue status your setup has.
 
 ### Installation
 
