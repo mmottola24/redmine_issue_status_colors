@@ -5,7 +5,7 @@ Redmine::Plugin.register :redmine_issue_status_colors do
   author 'Michael Mottola'
   description "Redmine plugin that adds the ability to view issue lists with color coded issues based on it's status"
   version '0.0.1'
-  url 'https://github.com/controlz/Remine-Issue-Status-Colors'
+  url 'https://github.com/controlz/remine_issue_status_colors'
   author_url 'https://github.com/controlz'
 
   requires_redmine :version_or_higher => '2.0.0'
