@@ -12,7 +12,10 @@ The colours and legend text can be modified in Administration > Issue Statuses f
 
 2. Run `rake redmine:plugins:migrate` or `rake redmine:plugins:migrate RAILS_ENV=production`
 
-3. Visit Administration > Issues Statuses, edit the statuses where you want to see your issues colour coded.
+3. Restart redmine server   
+`touch tmp/restart.txt`
+
+4. Visit Administration > Issues Statuses, edit the statuses where you want to see your issues colour coded.
 
 ### Screenshots
 
