@@ -1,13 +1,13 @@
 <%= fields_for :issue_status do |f| -%>
     <div class="admin-issues-status-colors">
-        <p>Leave fields below empty to use defaults</p>
+        <p><%= t('leave_fields_empty') %></p>
         <p style="display: block; position: relative;">
-          <%= f.label :highlight_color, 'Highlight Color' %>
+          <%= f.label :highlight_color, t('highlight_color') %>
           <%= f.text_field :highlight_color, class: 'color-picker' %>
-          <a href="#" class="clear-color-picker">clear</a>
+          <a href="#" class="clear-color-picker"><%= t('clear') %></a>
         </p>
         <p>
-          <%= f.label :legend_text, 'Legend Text' %>
+          <%= f.label :legend_text, t('legend_text') %>
           <%= f.text_field :legend_text %>
         </p>
     </div>
