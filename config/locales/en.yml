@@ -1,3 +1,6 @@
-# English strings go here for Rails i18n
 en:
-  my_label: "My label"
+  legend_text: 'Legend Text'
+  highlight_color: 'Highlight Color'
+  leave_fields_empty: 'Leave fields below empty to use defaults'
+  clear: 'clear'
+  statuses: 'Statuses: '
