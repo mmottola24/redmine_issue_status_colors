@@ -4,7 +4,7 @@ css_prefix = 'table.list tr.'
 %>
 
 <div class="status-legend-wrapper" >
-    <strong>Statuses: </strong>
+    <strong><%= t('statuses') %></strong>
     <%
     statuses = isc_get_statuses_from_issues issues
     statuses.each do |status| %>
