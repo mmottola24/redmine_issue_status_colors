@@ -10,12 +10,14 @@ The colours and legend text can be modified in Administration > Issue Statuses f
 1. Download the plugin, place files in plugins directory.  Or clone the repo while in your plugins directory.   
 `git clone git@github.com:controlz/redmine_issue_status_colors.git` 
 
-2. Run `rake redmine:plugins:migrate` or `rake redmine:plugins:migrate RAILS_ENV=production`
+2. Make sure the directory name is `redmine_issue_status_colors`. Otherwise you may receive 404 errors when viewing a page with issues.
 
-3. Restart redmine server   
+3. Run `rake redmine:plugins:migrate` or `rake redmine:plugins:migrate RAILS_ENV=production`
+
+4. Restart redmine server   
 `touch tmp/restart.txt`
 
-4. Visit Administration > Issues Statuses, edit the statuses where you want to see your issues colour coded.
+5. Visit Administration > Issues Statuses, edit the statuses where you want to see your issues colour coded.
 
 ### Screenshots
 
